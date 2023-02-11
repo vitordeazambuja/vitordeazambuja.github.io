@@ -9,6 +9,8 @@ body{
     align-items: center;
 }
 
+/* HEADER */
+
 header{
     font-family: 'JetBrains Mono', monospace;
     width:100%;
@@ -20,6 +22,7 @@ header{
 
 header h1{
     font-size: 3rem;
+    margin-left: 1.5rem;
 }
 
 nav{
@@ -48,7 +51,10 @@ h2{
     font-size:2rem;
 }
 
+/* ABOUT ME */
+
 .aboutme-container{
+    margin-top: 5rem;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -66,21 +72,63 @@ img{
     height:20rem;
     width:15rem;
 }
+a{
+    color:#0A0908;
+}
+
+/* PROJECTS */
 
 .projects-container{
+    margin-top: 5rem;
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+.projects-container img{
+    height: 256px;
+    width: 256px;
+}
+
+/* SKILLS */
 
 .skills-container{
+    margin-top: 5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.programming-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming-container img{
+    height: 5%;
+    width: 5%;
+    margin-right: 2rem;
+}
+
+/* CONTACT */
+
+.contact-container{
+    margin-top: 5rem;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-container{
+/* FOOTER */
+
+.footer-container{
+    margin-top: 5rem;
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }

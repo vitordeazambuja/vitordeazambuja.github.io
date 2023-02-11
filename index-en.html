@@ -1,0 +1,121 @@
+<html>
+
+  <head>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lato&display=swap" rel="stylesheet" />
+    <title>Vitor's Portfolio</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="logo">Vitor de Azambuja</h1>
+      <nav>
+        <div class="lang-menu">
+
+          <div class="selected-lang">
+            English
+          </div>
+
+          <ul>
+            <li>
+              <a id="portuguese" href="./index.html">Português</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-container">
+          <ul>
+            <a href="#aboutme"><li>ABOUT ME</li></a>
+            <a href="#projects"><li>PROJECTS</li></a>
+            <a href="#skills"><li>SKILLS</li></a>
+            <a href="#contact"><li>CONTACT</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="aboutme">
+        <div class="aboutme-container">
+          <div class="aboutme-text-container">
+            <h2>About Me</h2>
+            <p>Hello, I'm Vitor. I'm a 21-year-old Computer Engineering student at the Universidade of Uberaba (UNIUBE) and I'm also enrolled in the Full-Stack Engineer Course at <a href="https://www.codecademy.com/profiles/vitordeazambuja" target="_blank">Codecademy</a>.</p>
+            <p>I like learning new things and challenges that test my skills as a developer.</p>
+            <p>Fun fact: While you were on this site,  <span id="search-count">0</span> Google searches were done!</p>
+          </div>
+          <img src="./resources/profile.jpeg" />
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="projects-container">
+          <h2>Projects</h2>
+          <div class="projects-text-container">
+            <p>Click on the image to be redirected to my GitHub!</p>
+          </div>
+          <a href="https://github.com/vitordeazambuja" target="_blank"><img src="./resources/githublogo.png" /></a>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="skills-container">
+          <h2>Skills</h2>
+          <div class="programming-container">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+          </div>
+        </div>
+        
+      </section>
+
+      <section id="contact">
+        <div class="contact-container">
+          <h2>Contact</h2>
+          <div class="contact-icon-container">
+            <div class="email-container">
+              <img src="./resources/emailicon.svg"/>
+              <p>vitordeazambuja@edu.uniube.br</p>
+            </div>
+            <div class="linkedin-container">
+              <a href="https://www.linkedin.com/in/vitordeazambuja/" target="_blank"><img src="./resources/linkedinicon.png"/></a>
+              <a href="https://www.linkedin.com/in/vitordeazambuja/" target="_blank"><p>Linkedin</p></a>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>Copyright © 2023 Vitor de Azambuja</p>
+        <a href="https://www.flaticon.com/free-icons/star" title="star icon">Star icon created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/br/icones-gratis/linkedin" title="linkedin icon">Linkedin icon created by riajulislam - Flaticon</a>
+      </div>
+    </footer>
+
+    <script>
+      let seconds = 0;
+      let searchCount = document.getElementById('search-count');
+
+      function incrementSeconds(){
+        seconds += 1;
+        searchCount.innerText = (seconds*70000).toLocaleString("en-US");
+      }
+
+      let cancel = setInterval(incrementSeconds,1000);
+    </script>
+
+  </body>
+  
+</html>

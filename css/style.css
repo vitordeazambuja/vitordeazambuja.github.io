@@ -87,6 +87,10 @@ h2{
     visibility: visible;
 }
 
+#portuguese{
+    font-size: 1.5rem;
+}
+
 /* ABOUT ME */
 
 .aboutme-container{

@@ -38,7 +38,7 @@ ul{
     align-items: center;
 }
 
-ul a{
+.menu-container ul a{
     text-decoration: none;
     color: #0A0908;
     margin-right: 1.5rem;
@@ -49,6 +49,42 @@ ul a{
 h2{
     font-family: 'JetBrains Mono', monospace;
     font-size:2rem;
+}
+
+.selected-lang{
+    margin-top: 3.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-menu ul{
+    margin: 0;
+    padding: 0;
+    background-color: #f3e9dd;
+    border: 1px solid #C6AC8F;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-menu ul li a{
+    width: 125px;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.lang-menu ul:hover{
+    background-color: #C6AC8F;
+}
+
+.lang-menu:hover ul{
+    visibility: visible;
 }
 
 /* ABOUT ME */

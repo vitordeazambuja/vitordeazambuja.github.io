@@ -98,9 +98,19 @@ h2{
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.aboutme-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutme-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width:50%;
 }
@@ -113,10 +123,12 @@ p{
     width:15rem;
     border-radius: 1rem;
     margin-left: 2.5rem;
-    box-shadow: 1px 1px 14px 7px rgba(0,0,0,0.2);
 }
 a{
     color:#0A0908;
+}
+#portuguese{
+    font-size:1.5rem;
 }
 
 /* PROJECTS */

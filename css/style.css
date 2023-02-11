@@ -104,9 +104,12 @@ h2{
 p{
     font-size: 1.5rem;
 }
-img{
+#aboutme img{
     height:20rem;
     width:15rem;
+    border-radius: 1rem;
+    margin-left: 2.5rem;
+    box-shadow: 1px 1px 14px 7px rgba(0,0,0,0.2);
 }
 a{
     color:#0A0908;
@@ -138,6 +141,7 @@ a{
 }
 
 .programming-container{
+    margin-top: 1.5rem;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -157,7 +161,40 @@ a{
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+.contact-icon-container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-icon-container img{
+    height:48px;
+    width: 48px;
+}
+
+.contact-icon-container p{
+    margin-left: 1rem;
+}
+
+.email-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+}
+
+.linkedin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
 
 /* FOOTER */
 

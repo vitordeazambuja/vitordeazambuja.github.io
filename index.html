@@ -42,9 +42,9 @@
         <div class="aboutme-container">
           <div class="aboutme-text-container">
             <h2>Sobre Mim</h2>
-            <p>Olá, sou o Vitor, tenho 21 anos e atualmente sou estudante de Engenharia de Computação na Universidade de Uberaba (UNIUBE) e estudo no curso Full-Stack Engineer da <a href="https://www.codecademy.com/profiles/vitordeazambuja" target="_blank">Codecademy</a> paralelamente.</p>
+            <p>Olá, sou o Vitor, tenho 21 anos e atualmente sou estudante de Engenharia de Computação na Universidade de Uberaba (UNIUBE) e estudo paralelamente no curso Full-Stack Engineer da <a href="https://www.codecademy.com/profiles/vitordeazambuja" target="_blank">Codecademy</a>.</p>
             <p>Gosto de aprender coisas novas e de desafios que testem minhas habilidades como programador.</p>
-            <p>#</p>
+            <p>Fato aleatório: enquanto você estava nesse site, foram feitas <span id="search-count">0</span> pesquisas no Google!</p>
           </div>
           <img src="./resources/profile.jpeg" />
         </div>
@@ -80,6 +80,16 @@
       <section id="contact">
         <div class="contact-container">
           <h2>Contato</h2>
+          <div class="contact-icon-container">
+            <div class="email-container">
+              <img src="./resources/emailicon.svg"/>
+              <p>vitordeazambuja@edu.uniube.br</p>
+            </div>
+            <div class="linkedin-container">
+              <a href="https://www.linkedin.com/in/vitordeazambuja/" target="_blank"><img src="./resources/linkedinicon.png"/></a>
+              <a href="https://www.linkedin.com/in/vitordeazambuja/" target="_blank"><p>Linkedin</p></a>
+            </div>
+          </div>
         </div>
         
       </section>
@@ -90,8 +100,21 @@
       <div class="footer-container">
         <p>Copyright © 2023 Vitor de Azambuja</p>
         <a href="https://www.flaticon.com/free-icons/star" title="star icon">Star icon created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/br/icones-gratis/linkedin" title="linkedin icon">Linkedin icon created by riajulislam - Flaticon</a>
       </div>
     </footer>
+
+    <script>
+      let seconds = 0;
+      let searchCount = document.getElementById('search-count');
+
+      function incrementSeconds(){
+        seconds += 1;
+        searchCount.innerText = (seconds*70000).toLocaleString("en-US");
+      }
+
+      let cancel = setInterval(incrementSeconds,1000);
+    </script>
 
   </body>
   

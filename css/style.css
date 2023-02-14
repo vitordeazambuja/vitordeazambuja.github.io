@@ -224,18 +224,92 @@ a{
 
 /*RESPONSIVE DESIGN*/
 @media only screen and (max-width:576px){
-    /* HEADER */
-    header{
-        flex-direction: column;
-        flex-wrap: wrap;
+    body{
+        font-size: 5px;
+        margin: 0 auto;
+        padding: 0 auto;
     }
 
+    /* HEADER */
+
+    header{
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    header h1{
+        display: inline-flex;
+        justify-content: center;
+        font-size:2rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav{
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .menu-container{
+        margin-right: 5rem;
+    }
+
+    ul{
+        list-style-type:none;
+        display: flex;
+        justify-content: flex-start;
+        align-items:flex-start;
+        flex-flow: column wrap;
+    }
+
+    ul a{
+        margin-top: 1rem;
+    }
+
+    /* BASE CONTENT */
     p{
-        font-size: 3rem;
+        font-size: 1rem;
     }
 
     h2{
-        font-family: 'JetBrains Mono', monospace;
-        font-size:3.5rem;
+        font-size:1.5rem;
+    }
+
+    /* ABOUT ME */
+
+    #aboutme img{
+        height:10rem;
+        width:7.5rem;
+        border-radius: 1rem;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .aboutme-content{
+        flex-direction: column;
+    }
+
+    /* PROJECTS */
+
+    .projects-container img{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    /* SKILLS */
+    .programming-container{
+        margin-top: 1.5rem;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .programming-container img{
+        height: 15%;
+        width: 15%;
+        margin-bottom: 2rem;
     }
 }

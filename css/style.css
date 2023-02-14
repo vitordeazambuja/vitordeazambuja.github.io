@@ -261,6 +261,10 @@ a{
         margin-right: 5rem;
     }
 
+    .lang-menu{
+        visibility: hidden;
+    }
+
     ul{
         list-style-type:none;
         display: flex;
@@ -283,6 +287,10 @@ a{
     }
 
     /* ABOUT ME */
+
+    .aboutme-container{
+        margin:0;
+    }
 
     #aboutme img{
         height:10rem;

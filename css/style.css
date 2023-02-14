@@ -141,6 +141,10 @@ a{
     flex-direction: column;
 }
 
+.projects-text-container{
+    text-align: center;
+}
+
 .projects-container img{
     height: 256px;
     width: 256px;
@@ -292,6 +296,11 @@ a{
         flex-direction: column;
     }
 
+    .aboutme-text-container{
+        width:90%;
+        margin-bottom: 1rem;
+    }
+
     /* PROJECTS */
 
     .projects-container img{
@@ -312,5 +321,11 @@ a{
         height: 15%;
         width: 15%;
         margin-bottom: 2rem;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
     }
 }
